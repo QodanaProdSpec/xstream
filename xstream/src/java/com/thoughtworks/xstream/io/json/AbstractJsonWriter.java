@@ -155,7 +155,7 @@ public abstract class AbstractJsonWriter extends AbstractWriter {
     private static class IllegalWriterStateException extends IllegalStateException {
         private static final long serialVersionUID = 20151010L;
 
-        public IllegalWriterStateException(final int from, final int to, final String element} {
+        public IllegalWriterStateException(final int from, final int to, final String element) {
             super("Cannot turn from state "
                 + getState(from)
                 + " into state "
