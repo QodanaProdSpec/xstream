@@ -14,7 +14,6 @@ profile:
 #  - name: <SomeDisabledInspectionId>
 #    paths:
 #      - <path/where/not/run/inspection>
-
 #Execute shell command before Qodana execution (Applied in CI/CD pipeline)
 #bootstrap: sh ./prepare-qodana.sh
 #Install IDE plugins before Qodana execution (Applied in CI/CD pipeline)
@@ -25,3 +24,7 @@ linter: jetbrains/qodana-jvm:latest
 include:
   - name: Deprecation
   - name: DeprecatedIsStillUsed
+  - name: CheckDependencyLicenses
+  - name: FinalStaticMethod
+exclude:
+  - name: SpringFacetProgrammaticInspection
