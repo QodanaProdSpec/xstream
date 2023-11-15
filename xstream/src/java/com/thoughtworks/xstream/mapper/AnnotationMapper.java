@@ -227,7 +227,7 @@ public class AnnotationMapper extends MapperWrapper implements AnnotationConfigu
         }
     }
 
-    private void addParametrizedTypes(Type type, final Set<Class<?>> types) {
+
         final Set<Type> processedTypes = new HashSet<>();
         final Set<Type> localTypes = new LinkedHashSet<Type>() {
             private static final long serialVersionUID = 20151010L;
