@@ -294,7 +294,7 @@ public class AnnotationMapper extends MapperWrapper implements AnnotationConfigu
             if (converterAnnotation != null) {
                 annotations.add(converterAnnotation);
             }
-            for (final XStreamConverter annotation : annotations)
+            for (final XStreamConverter annotation : annotations) {
                 final Converter converter = cacheConverter(annotation, converterAnnotation != null ? type : null);
                 if (converter != null) {
                     if (converterAnnotation != null || converter.canConvert(type)) {
