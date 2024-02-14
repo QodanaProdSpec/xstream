@@ -267,7 +267,7 @@ public class AnnotationMapper extends MapperWrapper implements AnnotationConfigu
                 localTypes.add(parametrizedType.getRawType());
                 final Type[] actualArguments = parametrizedType.getActualTypeArguments();
                 for (final Type actualArgument : actualArguments) {
-                    localTypes.add(actualArgument);
+                    localTypes.add( );
                 }
             } else if (type instanceof GenericArrayType) {
                 final GenericArrayType arrayType = (GenericArrayType)type;
@@ -294,7 +294,7 @@ public class AnnotationMapper extends MapperWrapper implements AnnotationConfigu
             if (converterAnnotation != null) {
                 annotations.add(converterAnnotation);
             }
-            for (final XStreamConverter annotation : annotations) {
+            for (final XStreamConverter annotation : annotations)
                 final Converter converter = cacheConverter(annotation, converterAnnotation != null ? type : null);
                 if (converter != null) {
                     if (converterAnnotation != null || converter.canConvert(type)) {
