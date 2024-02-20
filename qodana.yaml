@@ -26,5 +26,7 @@ include:
   - name: DeprecatedIsStillUsed
   - name: CheckDependencyLicenses
   - name: FinalStaticMethod
+  - name: CyclomaticComplexity
+  - name: GroovyOverlyComplexMethod
 exclude:
   - name: SpringFacetProgrammaticInspection
