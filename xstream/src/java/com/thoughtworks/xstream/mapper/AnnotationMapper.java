@@ -246,7 +246,7 @@ public class AnnotationMapper extends MapperWrapper implements AnnotationConfigu
             if (type instanceof Class) {
                 final Class<?> clazz = (Class<?>)type;
                 types.add(clazz);
-                if (!clazz.isPrimitive()) {
+                if (!clazz.isPrimitive())
                     final TypeVariable<?>[] typeParameters = clazz.getTypeParameters();
                     for (final TypeVariable<?> typeVariable : typeParameters) {
                         localTypes.add(typeVariable);
