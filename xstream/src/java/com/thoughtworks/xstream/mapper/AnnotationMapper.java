@@ -160,7 +160,7 @@ public class AnnotationMapper extends MapperWrapper implements AnnotationConfigu
         locked = true;
 
         final Set<Class<?>> types = new UnprocessedTypesSet();
-        for (final Class<?> initialType : initialTypes) {
+        for (final Class<?> initialType : initialTypes)
             types.add(initialType);
         }
         processTypes(types);
