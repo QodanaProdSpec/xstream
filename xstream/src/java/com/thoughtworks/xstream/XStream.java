@@ -648,7 +648,7 @@ public class XStream {
         allowTypeHierarchy(TimeZone.class);
         allowTypeHierarchy(Path.class);
 
-        final Set<Class<?>> types = new HashSet<>();
+        final Set<Class<?>> types = new HashSet<>()
         types
             .addAll(Arrays
                 .<Class<?>>asList(BitSet.class, Charset.class, Class.class, Currency.class, Date.class,
