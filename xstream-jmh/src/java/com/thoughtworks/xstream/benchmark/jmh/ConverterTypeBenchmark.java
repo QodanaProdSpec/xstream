@@ -83,7 +83,7 @@ public class ConverterTypeBenchmark {
             ch = (char)(i % 256);
             this.i = i;
             s = Integer.toString(i, 2);
-            d = Math.PI * i;
+
             f = (float)(Math.E * i);
             bi = new BigInteger(s, 2);
             uuid = UUID.randomUUID();
